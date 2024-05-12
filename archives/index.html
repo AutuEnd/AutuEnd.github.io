@@ -18,15 +18,15 @@
 <link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
 
 
-<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1715487093389">
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1715487558366">
 
-<link rel="stylesheet" href="/css/style.css?v=1715487093389">
+<link rel="stylesheet" href="/css/style.css?v=1715487558366">
 
 
 
 
     
-        <link rel="stylesheet" href="/custom.css?v=1715487093389">
+        <link rel="stylesheet" href="/custom.css?v=1715487558366">
     
 
 
@@ -36,7 +36,7 @@
 <script src="/lib/lax.min.js" async></script>
 
 
-<script async src="/js/app.js?v=1715487093389"></script>
+<script async src="/js/app.js?v=1715487558367"></script>
 
  
 
@@ -59,8 +59,8 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>Articles</span>1</div>
-        <div><span>Tags</span>0</div>
+        <div><span>Articles</span>2</div>
+        <div><span>Tags</span>1</div>
         <div><span>Categories</span>0</div>
     </div>
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
@@ -158,6 +158,29 @@
     
         
         
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/MATH-221-231-241/" style="font-size: 10px;">MATH 221/231/241</a>
+    </div>
+    
+      <script>
+        var maxTagcloud = parseInt(17);
+        var tags_length = parseInt(1);
+        var tags_arr = [];
+        for(var i = 0; i < tags_length; i++){
+          tags_arr.push(i);
+        }
+        tags_arr.sort(function (l, r) {
+          return Math.random() > 0.5 ? -1 : 1;
+        });
+        tags_arr = tags_arr.slice(0, maxTagcloud < tags_length ? tags_length - maxTagcloud : 0);
+        for(var tag_i = 0; tag_i < tags_arr.length; tag_i++){
+          document.getElementById("randomtagcloud").children[tags_arr[tag_i]].style.display = 'none';
+        }
+      </script>
+    
+  </div>
+
     
         
         
@@ -165,7 +188,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">Archive</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -178,6 +201,10 @@
     <h3 class="nexmoe-widget-title">Recent Posts</h3>
     <div class="nexmoe-widget">
       <ul>
+        
+          <li>
+            <a href="/2024/05/12/Calculus%20Note/">MATH 221/231/241 Notes (Updating)</a>
+          </li>
         
           <li>
             <a href="/2024/05/11/hello-world/">Hello World</a>
@@ -225,6 +252,34 @@
 
     </div>
 </div><!-- .nexmoe-drawer --></div><div id="nexmoe-content"><div class="nexmoe-primary"><section class="nexmoe-posts">
+    <div class="nexmoe-post">
+        <a href="/2024/05/12/Calculus%20Note/">
+            
+                <div class="nexmoe-post-cover mdui-ripple"> 
+                    <img src="https://img2.imgtp.com/2024/05/12/wMLTiXfN.png" alt="MATH 221/231/241 Notes (Updating)" loading="lazy">
+                    <h1>MATH 221/231/241 Notes (Updating)</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta">
+    <div class="nexmoe-rainbow">
+        <a class="nexmoefont icon-calendar-fill">2024年05月12日</a>
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</div>
+
+        <article>
+            
+        </article>
+    </div>
+
     <div class="nexmoe-post">
         <a href="/2024/05/11/hello-world/">
             
