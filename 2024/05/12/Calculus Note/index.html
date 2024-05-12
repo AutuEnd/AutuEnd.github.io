@@ -14,7 +14,7 @@
 <meta property="og:description" content="limitation $\lim\limits_{x\to 0}\cfrac{\sin x}{x}&#x3D;1$  $\lim\limits_{x\to 0}\cfrac{1-\cos x}{x^2}&#x3D;\cfrac{1}{2}$  $\lim\limits_{x\to 0}\cfrac{\arcsin x}{x}&#x3D;1$  $\lim\limits_{x \to \infty}">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-05-12T04:15:18.000Z">
-<meta property="article:modified_time" content="2024-05-12T04:18:46.636Z">
+<meta property="article:modified_time" content="2024-05-12T04:38:57.704Z">
 <meta property="article:author" content="AutuEnd">
 <meta property="article:tag" content="MATH 221&#x2F;231&#x2F;241">
 <meta name="twitter:card" content="summary">
@@ -23,15 +23,15 @@
 <link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
 
 
-<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1715487652165">
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1715488755045">
 
-<link rel="stylesheet" href="/css/style.css?v=1715487652165">
+<link rel="stylesheet" href="/css/style.css?v=1715488755045">
 
 
 
 
     
-        <link rel="stylesheet" href="/custom.css?v=1715487652165">
+        <link rel="stylesheet" href="/custom.css?v=1715488755045">
     
 
 
@@ -41,7 +41,7 @@
 <script src="/lib/lax.min.js" async></script>
 
 
-<script async src="/js/app.js?v=1715487652165"></script>
+<script async src="/js/app.js?v=1715488755045"></script>
 
  
 
@@ -381,29 +381,18 @@
 <h2 id="Series-Tests"><a href="#Series-Tests" class="headerlink" title="Series Tests"></a>Series Tests</h2><h5 id="Tests"><a href="#Tests" class="headerlink" title="Tests"></a>Tests</h5><ul>
 <li><p>Intergral Test</p>
 <ul>
-<li>$ \begin{cases}a_n&gt;0\a_{n+1}&lt;a_n\end{cases}\impliess_n+\int_{n+1}^{\infty}f(x)dx\le s \le s_n+\int_{n}^{\infty}f(x)dx $</li>
+<li>$ \begin{cases}a_n&gt;0\a_{n+1}&lt;a_n\end{cases}\implies s_n+\int_{n+1}^{\infty}f(x)dx\le s \le s_n+\int_{n}^{\infty}f(x)dx $</li>
 <li>Let $R_n&#x3D;s-s_n&#x3D;a_{n+1}+a_{n+2}+a_{n+3}+…$ Then $ \int_{n+1}^\infty f(x)dx\le Rn\le \int_n^\infty f(x)dx$</li>
 </ul>
 </li>
 <li><p>Comparison Test</p>
 <ul>
-<li><p>$a_n &gt; b_n &gt; 0 \implies\begin{cases}</p>
-<pre><code>\ce&#123;\sum a_n convergent \implies \sum b_n convergent&#125;\\
-\ce&#123;\sum b_n divergent \implies \sum a_n divergent&#125;
-</code></pre>
-<p>\end{cases}$</p>
-</li>
+<li>$a_n &gt; b_n &gt; 0 \implies<br>\begin{cases}<br>{<br>  {\ce{\sum a_n convergent \implies \sum b_n convergent}} \<br>  {\ce{\sum b_n divergent \implies \sum a_n divergent}}<br>}<br>\end{cases}$</li>
 </ul>
 </li>
 <li><p>Limit Comparison Test</p>
 <ul>
-<li><p>$\begin{cases}</p>
-<pre><code>a_n &gt; 0\\
-b_n &gt; 0\\
-lim_&#123;n\to\infty&#125;&#123;\frac&#123;a_n&#125;&#123;b_n&#125;&#125;=c , c \not= 0 ~ \text&#123;or&#125; ~ \infty
-</code></pre>
-<p>\end{cases}\implies\ce{\sum a_n &amp; \sum b_n both converge or both diverge}$</p>
-</li>
+<li>$\begin{cases}<br>a_n &gt; 0\<br>b_n &gt; 0\<br>lim_{n\to\infty}{\frac{a_n}{b_n}}&#x3D;c , c \not&#x3D; 0 ~ \text{or} ~ \infty<br>\end{cases}\implies<br>\ce{\sum a_n &amp; \sum b_n both converge or both diverge}$</li>
 </ul>
 </li>
 <li><p>Ratio Test</p>
@@ -419,16 +408,7 @@ lim_&#123;n\to\infty&#125;&#123;\frac&#123;a_n&#125;&#123;b_n&#125;&#125;=c , c 
 </li>
 <li><p>Root Test</p>
 <ul>
-<li><p>$\begin{cases}</p>
-<pre><code>\lim_&#123;n\to\infty&#125;|\sqrt[n]&#123;|a_n|&#125;=L
-</code></pre>
-<p>\end{cases}\implies\begin{cases}</p>
-<pre><code>L&lt;1:\sum a_n\text&#123; converges absolutely&#125;\\
-L&gt;1:\sum a_n\text&#123; diverges&#125;\\
-L=1:\sum a_n\text&#123; can&#39;t tell&#125;
-</code></pre>
-<p>\end{cases}$</p>
-</li>
+<li>$\begin{cases}<br>\lim_{n\to\infty}|\sqrt[n]{|a_n|}&#x3D;L<br>\end{cases}\implies\begin{cases}<br>L&lt;1:\sum a_n\text{ converges absolutely}\<br>L&gt;1:\sum a_n\text{ diverges}\<br>L&#x3D;1:\sum a_n\text{ can’t tell}<br>\end{cases}$</li>
 </ul>
 </li>
 </ul>
@@ -525,7 +505,7 @@ L=1:\sum a_n\text&#123; can&#39;t tell&#125;
 </div>
   
   
-    <script async src="/js/copy-codeblock.js?v=1715487652142"></script>
+    <script async src="/js/copy-codeblock.js?v=1715488755041"></script>
   
 
   
