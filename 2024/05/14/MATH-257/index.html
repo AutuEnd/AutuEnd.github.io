@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en"><head>
+<title>MATH 257 - AutuEnd&#39;s Blog</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Note for MATH 257 Main question: $A\boldsymbol x &#x3D; \boldsymbol b$  1 Introduction to Vectors1.1 Vectors We use $\left[ \begin{array}{} x\newline y \newline …\end{array}\right]$ to present an vect">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MATH 257">
+<meta property="og:url" content="http://autuend.github.io/2024/05/14/MATH-257/index.html">
+<meta property="og:site_name" content="AutuEnd&#39;s Blog">
+<meta property="og:description" content="Note for MATH 257 Main question: $A\boldsymbol x &#x3D; \boldsymbol b$  1 Introduction to Vectors1.1 Vectors We use $\left[ \begin{array}{} x\newline y \newline …\end{array}\right]$ to present an vect">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-05-14T05:33:43.000Z">
+<meta property="article:modified_time" content="2024-05-14T11:27:33.014Z">
+<meta property="article:author" content="AutuEnd">
+<meta property="article:tag" content="MATH 257">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.css">
+<link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
+
+
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1715686068269">
+
+<link rel="stylesheet" href="/css/style.css?v=1715686068269">
+
+
+
+
+    
+        <link rel="stylesheet" href="/custom.css?v=1715686068270">
+    
+
+
+
+<script src="/lib/mdui_043tiny/mdui.js" async></script>
+<script src="/lib/fancybox/fancybox.umd.js" async></script>
+<script src="/lib/lax.min.js" async></script>
+
+
+<script async src="/js/app.js?v=1715686068270"></script>
+
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4D4ZJ9G024"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "G-4D4ZJ9G024");
+</script>
+
+
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<meta name="generator" content="Hexo 7.2.0"></head><body class="nexmoe mdui-drawer-body-left"><div id="nexmoe-background"><div class="nexmoe-bg" style="background-image: url(https://img2.imgtp.com/2024/05/12/wMLTiXfN.png)"></div><div class="mdui-appbar mdui-shadow-0"><div class="mdui-toolbar"><a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: &#039;#drawer&#039;, swipe: true}" title="menu"><i class="mdui-icon nexmoefont icon-menu"></i></a><div class="mdui-toolbar-spacer"></div><a class="mdui-btn mdui-btn-icon" href="/" title="AutuEnd"><img src="https://img2.imgtp.com/2024/05/11/aXUd5xeB.png" alt="AutuEnd"></a></div></div></div><div id="nexmoe-header"><div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="AutuEnd">
+            <img src="https://img2.imgtp.com/2024/05/11/aXUd5xeB.png" alt="AutuEnd" alt="AutuEnd">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>3</div>
+        <div><span>Tags</span>2</div>
+        <div><span>Categories</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/archive.html" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                文章归档
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://nexmoe.com/donate.html" title="给我赞助">
+            <i class="mdui-list-item-icon nexmoefont icon-coffee"></i>
+            <div class="mdui-list-item-content">
+                给我赞助
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://i.nexmoe.com/" title="关于博主">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博主
+            </div>
+        </a>
+        
+    </div>
+    
+    
+        
+        <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            </form>
+         
+    </div>
+</div>
+
+
+
+
+    
+        
+        <div class="nexmoe-widget-wrap">
+	<div class="nexmoe-widget nexmoe-social">
+		<a
+			class="mdui-ripple"
+			href="https://space.bilibili.com/351608655"
+			target="_blank"
+			mdui-tooltip="{content: '哔哩哔哩'}"
+			style="
+				color: rgb(231, 106, 141);
+				background-color: rgba(231, 106, 141, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-bilibili"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://github.com/autuend"
+			target="_blank"
+			mdui-tooltip="{content: 'GitHub'}"
+			style="
+				color: rgb(25, 23, 23);
+				background-color: rgba(25, 23, 23, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-github"
+			></i> </a
+		>
+	</div>
+</div>
+
+    
+        
+        
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/MATH/" style="font-size: 10px;">MATH</a> <a href="/tags/MATH-257/" style="font-size: 10px;">MATH 257</a>
+    </div>
+    
+      <script>
+        var maxTagcloud = parseInt(17);
+        var tags_length = parseInt(2);
+        var tags_arr = [];
+        for(var i = 0; i < tags_length; i++){
+          tags_arr.push(i);
+        }
+        tags_arr.sort(function (l, r) {
+          return Math.random() > 0.5 ? -1 : 1;
+        });
+        tags_arr = tags_arr.slice(0, maxTagcloud < tags_length ? tags_length - maxTagcloud : 0);
+        for(var tag_i = 0; tag_i < tags_arr.length; tag_i++){
+          document.getElementById("randomtagcloud").children[tags_arr[tag_i]].style.display = 'none';
+        }
+      </script>
+    
+  </div>
+
+    
+        
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Archive</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Recent Posts</h3>
+    <div class="nexmoe-widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/05/14/MATH-257/">MATH 257</a>
+          </li>
+        
+          <li>
+            <a href="/2024/05/12/Calculus%20Note/">MATH 221/231/241 Notes (Updating)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/05/11/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+        
+        <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-link">
+		<ul>
+        
+            <li>
+                <a href="https://xiawubing.github.io" target="_blank" >
+                    <img src="https://img2.imgtp.com/2024/05/11/aXUd5xeB.png" alt="AutuEnd"></img>
+                    <p>AutuEnd</p>
+                </a>
+            </li>
+        
+		</ul>
+    </div>
+</div>
+<style>
+.nexmoe-widget-wrap .nexmoe-link ul li a {
+    text-align : center;
+}
+.nexmoe-widget-wrap .nexmoe-link ul li a img {
+    max-width : 100%;
+}
+.nexmoe-widget-wrap .nexmoe-link ul li a p {
+    margin: 10px 0;
+}
+</style>
+
+    
+   
+    <div class="nexmoe-copyright">
+        &copy; 2024 AutuEnd
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <p> QAQAQ <\p>
+
+    </div>
+</div><!-- .nexmoe-drawer --></div><div id="nexmoe-content"><div class="nexmoe-primary"><div class="nexmoe-post">
+  <article>
+    
+        <div class="nexmoe-post-cover"> 
+            <img src="https://img2.imgtp.com/2024/05/12/wMLTiXfN.png" alt="MATH 257" loading="lazy">
+            <h1>MATH 257</h1>
+        </div>
+    
+    
+    <div class="nexmoe-post-meta">
+    <div class="nexmoe-rainbow">
+        <a class="nexmoefont icon-calendar-fill">2024年05月14日</a>
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</div>
+
+    <h1 id="Note-for-MATH-257"><a href="#Note-for-MATH-257" class="headerlink" title="Note for MATH 257"></a>Note for MATH 257</h1><blockquote>
+<p>Main question: $A\boldsymbol x &#x3D; \boldsymbol b$</p>
+</blockquote>
+<h3 id="1-Introduction-to-Vectors"><a href="#1-Introduction-to-Vectors" class="headerlink" title="1 Introduction to Vectors"></a>1 Introduction to Vectors</h3><h4 id="1-1-Vectors"><a href="#1-1-Vectors" class="headerlink" title="1.1 Vectors"></a>1.1 Vectors</h4><ul>
+<li>We use $\left[ \begin{array}{} x\newline y \newline …\end{array}\right]$ to present an vector</li>
+<li>Linear Combinations: $3\boldsymbol{v}+5\boldsymbol{w}$ is a typical linear combination $c\boldsymbol{v}+d\boldsymbol{w}$ of the vetors $\boldsymbol{v}$ and $\boldsymbol{w}$</li>
+</ul>
+<h4 id="1-2-Lengths-and-Dot-Products"><a href="#1-2-Lengths-and-Dot-Products" class="headerlink" title="1.2 Lengths and Dot Products"></a>1.2 Lengths and Dot Products</h4><ul>
+<li>Lengths: $||\boldsymbol{v}||&#x3D;\sqrt{\boldsymbol v \cdot \boldsymbol v}&#x3D;\sqrt{\sum{v_i*v_i}}$</li>
+<li>Dot product: $\boldsymbol{v}\cdot \boldsymbol{w}&#x3D;\sum{v_i*w_i}$, $\boldsymbol{v}$ and $\boldsymbol{w}$ have same rows.</li>
+<li>Angle: angle $\theta$ between $\boldsymbol v$ and $\boldsymbol w$ has $\cos \theta &#x3D; \dfrac{\boldsymbol v \cdot \boldsymbol w}{||\boldsymbol v||*||\boldsymbol w||}$</li>
+</ul>
+<h3 id="2-Matrics-Elimination"><a href="#2-Matrics-Elimination" class="headerlink" title="2 Matrics Elimination"></a>2 Matrics Elimination</h3><h4 id="2-1-Matrix"><a href="#2-1-Matrix" class="headerlink" title="2.1 Matrix"></a>2.1 Matrix</h4><ul>
+<li>Rows and Columns: We called $A&#x3D;\left[ \begin{array}{}1 &amp; 2 \newline 3 &amp; 4\newline 5 &amp; 6\end{array}\right]$ a 3 by 2 ($3\times 2$) matrix. With $m&#x3D;3$ rows and $n&#x3D;2$ columns.</li>
+<li>Multiplication: If $A\ce{(m\times n)}\cdot B\ce{(n\times p)}&#x3D;C\ce{(m\times p)}$, then $c_{ij}&#x3D;\sum_{k&#x3D;1}^{n}{a_{ik}}{b_{kj}}$</li>
+<li>Identity Matrix: $I$, $i_{ij}&#x3D;\begin{cases}0, ~ i\not &#x3D;j\newline 1, ~ i&#x3D;j\end{cases}$</li>
+</ul>
+<h4 id="2-2-Elimination"><a href="#2-2-Elimination" class="headerlink" title="2.2 Elimination"></a>2.2 Elimination</h4><blockquote>
+<p>$A\to U$</p>
+</blockquote>
+<ul>
+<li>$A &#x3D; LU &#x3D; LDU$<ul>
+<li>$U$: Upper Triangular System, All $0$ for $u_{ij}, i &gt; j$.</li>
+<li>$L$: Lower Triangular System, All $0$ for $l_{ij}, i &lt; j$.</li>
+<li>$E$: Elimination matrix, $U &#x3D; (\prod_0^n{E_i})A$, $L &#x3D; \prod_n^0 E_i^{-1}$</li>
+<li>In $A &#x3D; LDU $, we riqure $u_{ii}&#x3D;l_{ii}&#x3D;1$ and $d_{ij}&#x3D;0 ~ \ce{ for }~ i \not &#x3D; j$</li>
+<li>Example: <ul>
+<li>$\left[ \begin{array}{}2 &amp; 8 \newline 6 &amp; 29\end{array}\right] &#x3D; \left[ \begin{array}{}1 &amp; 0 \newline 3 &amp; 1\end{array}\right]\left[ \begin{array}{}2 &amp; 8 \newline 0 &amp; 5\end{array}\right] &#x3D; \left[ \begin{array}{}1 &amp; 0 \newline 3 &amp; 1\end{array}\right]\left[ \begin{array}{}2 &amp; 0 \newline 0 &amp; 5\end{array}\right]\left[ \begin{array}{}1 &amp; 4 \newline 0 &amp; 1\end{array}\right]$</li>
+<li>$E&#x3D;\begin{bmatrix}1 &amp; 0\newline -3 &amp; 1\end{bmatrix}$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Augmented Matrix: $[A ~ \boldsymbol b]&#x3D;[\boldsymbol a_1 ~ … ~ \boldsymbol a_n ~ \boldsymbol b]$</li>
+<li>Elimination of Augmented Matrix:<ul>
+<li>$[A ~ \boldsymbol b]\to [U ~  \boldsymbol b’]$</li>
+<li>$A&#x3D;\left[\begin{array}{}3 &amp; 2 &amp; 1\newline 2 &amp; 3 &amp; 1\newline 1 &amp; 2 &amp; 3\end{array}\right]$, $\boldsymbol b &#x3D; \left[\begin{array}{}39\newline 34\newline 26\newline\end{array}\right]$</li>
+<li>$\left[\begin{array}{}3 &amp; 2 &amp; 1 &amp; 39\newline 2 &amp; 3 &amp; 1 &amp; 34\newline 1 &amp; 2 &amp; 3 &amp; 26\end{array}\right]\to \left[\begin{array}{}3 &amp; 2 &amp; 1 &amp; 39\newline 0 &amp; 5&#x2F;3 &amp; 1&#x2F;3 &amp; 8\newline 0 &amp; 0 &amp; 12&#x2F;5 &amp; 33&#x2F;5\end{array}\right]$</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-Inverse-Transpose"><a href="#3-Inverse-Transpose" class="headerlink" title="3 Inverse &amp; Transpose"></a>3 Inverse &amp; Transpose</h3><h4 id="3-1-Defination"><a href="#3-1-Defination" class="headerlink" title="3.1 Defination"></a>3.1 Defination</h4><ul>
+<li>Inverse<ul>
+<li>For a square matrix $A$, inverse matrix $A^{-1}: A^{-1}A&#x3D;I$ or $AA^{-1}&#x3D;I$ </li>
+<li>If $A$ have an $A^{-1}$, then A is invertible &#x2F; non-sigular, or A is sigular.</li>
+<li>For square $A(n\times n)$, $A^{-1}\iff rank(A)&#x3D;n$</li>
+</ul>
+</li>
+<li>Transpose<ul>
+<li>$A^{T}$’s row is same as $A$’s column</li>
+</ul>
+</li>
+<li>$(AB)^{-1}&#x3D;B^{-1}A^{-1}$</li>
+<li>$(AB)^T&#x3D;B^TA^T$</li>
+<li>$(A^{-1})^T&#x3D;(A^T)^{-1}$</li>
+</ul>
+<h4 id="3-2-Calculate-A-1"><a href="#3-2-Calculate-A-1" class="headerlink" title="3.2 Calculate $A^{-1}$"></a>3.2 Calculate $A^{-1}$</h4><ul>
+<li>Gauss-Jordan Elimination<ul>
+<li>For $AA^{-1}&#x3D;I$, make an Augmented Matrix with $[A ~ I]$, make elimination to $[U ~ A^{-1}]$</li>
+<li>Example: $\left[\begin{array}{}1 &amp; 3\newline 2 &amp; 7\end{array}\right] A^{-1}&#x3D;\left[\begin{array}{}1 &amp; 0\newline 0 &amp; 1\end{array}\right]$<ul>
+<li>$[A ~ I] &#x3D; \left[\begin{array}{}1 &amp; 3 &amp; 1 &amp; 0\newline 2 &amp; 7 &amp; 0 &amp; 1\end{array}\right]$</li>
+<li>Do Gauss Elimination to: $\begin{bmatrix}1 &amp; 3 &amp; 1 &amp; 0\newline 0 &amp; 1 &amp; -2 &amp; 1\end{bmatrix}$</li>
+<li>Do Jordan Elimination to:$\begin{bmatrix}1 &amp; 0 &amp; 7 &amp; 3\newline 0 &amp; 1 &amp; -2 &amp; 1\end{bmatrix} &#x3D; [I ~ A^{-1}]$</li>
+<li>So $A^{-1}&#x3D;\begin{bmatrix} 7 &amp; -3\newline -2 &amp; 1\end{bmatrix}$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-Space"><a href="#4-Space" class="headerlink" title="4 Space"></a>4 Space</h3><h4 id="4-1-Definition"><a href="#4-1-Definition" class="headerlink" title="4.1 Definition"></a>4.1 Definition</h4><ul>
+<li>All linear combination of all vectors in Space(or Subspace) will still in Space(or subspace).</li>
+<li>$\ce{Subspace} ~ R^m \subset \ce{Space} ~ R^n$, We called $R^m$ is a subspace of $R^n$, $n\ge m$ obviously.</li>
+<li>The Space $R^n$ consists of all vectors $\boldsymbol v$ with $n$ components</li>
+<li>$\boldsymbol v_1, \boldsymbol v_2, …,\boldsymbol v_n\in R^m$, for any $\boldsymbol w &#x3D; \sum_{i&#x3D;1}^n k_i \boldsymbol v_i (k_i ~ \ce{is any real number})$,$\boldsymbol w\in ~ {R^m}$. ${R^m}$ can be space or subspace.</li>
+<li>Point $[0,…,0]^T$ in any Space and any Subspace</li>
+</ul>
+<h4 id="4-2-Span"><a href="#4-2-Span" class="headerlink" title="4.2 Span"></a>4.2 Span</h4><ul>
+<li>The space $span{\boldsymbol v_1, \boldsymbol v_2, …, \boldsymbol v_n}$ is by all linear combination of these $n$ vectors, it must be $R^n$ or a subspace of $R^n$</li>
+<li>Example:<ul>
+<li>$span{[1,1]^T,[1,1]^T}&#x3D;R^1(y&#x3D;x)$</li>
+<li>$span{[1,1]^T,[1,2]^T}&#x3D;R^2$</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-3-independence-basis-rank-and-dimension"><a href="#4-3-independence-basis-rank-and-dimension" class="headerlink" title="4.3 independence, basis, rank and dimension"></a>4.3 independence, basis, rank and dimension</h4><ul>
+<li>Linear independent: $\sum{c_i\boldsymbol{x}_i}\not &#x3D;{0}$ for any $c_i$ with $\prod c_i\not &#x3D; 0$</li>
+<li>basis: basis are linear independent. Basis is not unique. </li>
+<li>rank<ul>
+<li>Defination: The rank of $A$ is the number of pivots. This number is $r$ &#x2F; $\ce{r}(A)$ &#x2F; $\ce{rank}(A)$. Also the dimension of $C(A)$ and $C(A^T)$. ($\ce{rank}(A)&#x3D;\ce{rank}(A^T)$)</li>
+<li>Pivots and Free variables:<ul>
+<li>For $A ~ (n\times m)$:<ul>
+<li>The numbers of Pivots &#x3D; $\ce{rank}(A)$</li>
+<li>The numbers of Free variables &#x3D; $m - \ce{rank}(A)$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>dimension: $A$ has dimension $\ce{rank}(A)$</li>
+</ul>
+<h4 id="4-4-Spaces-of-Matrix"><a href="#4-4-Spaces-of-Matrix" class="headerlink" title="4.4 Spaces of Matrix"></a>4.4 Spaces of Matrix</h4><ul>
+<li>Example: $A &#x3D; \begin{bmatrix} 1 &amp; 2\newline 2 &amp; 4\newline 3 &amp; 5\end{bmatrix}$</li>
+<li>$C(A)&#x3D;\ce{span}{[1,2,3]^T,[2,4,5]^T}$: Column Space of A<ul>
+<li>$C(A)&#x3D;C([\boldsymbol v_1, \boldsymbol v_2, …, \boldsymbol v_n])&#x3D;\ce{span}{\boldsymbol v_1, \boldsymbol v_2, …, \boldsymbol v_n}$</li>
+</ul>
+</li>
+<li>$C(A^T)&#x3D;\ce{span}{[1,2]^T,[3,5]^T}$: Row Space of A<ul>
+<li>$C(A^T)&#x3D;C(\begin{bmatrix}-\boldsymbol v_1-\newline -\boldsymbol v_2-\newline ……\newline -\boldsymbol v_n-\end{bmatrix})&#x3D;\ce{span}{\boldsymbol v_1, \boldsymbol v_2, …, \boldsymbol v_n}$</li>
+</ul>
+</li>
+<li>$N(A)&#x3D;R^0$: Nullspace of A<ul>
+<li>All solutions $\boldsymbol x$ to $A\boldsymbol{x}&#x3D;0$</li>
+</ul>
+</li>
+<li>$N(A^T)&#x3D;\ce{span}{[-2,1,0]^T}$: Left Nullspace of A<ul>
+<li>All solutions $\boldsymbol x$ to $A^T\boldsymbol{x}&#x3D;0$</li>
+</ul>
+</li>
+<li>For $A(n\times m)$, $\begin{cases} \ce{rank}(C(A))+\ce{rank}(N(A^T))&#x3D;n, C(A)\perp N(A^T)\newline \ce{rank}(C(A^T))+\ce{rank}(N(A))&#x3D;m, C(A^T)\perp N(A)\end{cases}$</li>
+</ul>
+<h4 id="4-5-Solve-A-boldsymbol-x-boldsymbol-b"><a href="#4-5-Solve-A-boldsymbol-x-boldsymbol-b" class="headerlink" title="4.5 Solve $A \boldsymbol x &#x3D; \boldsymbol b$"></a>4.5 Solve $A \boldsymbol x &#x3D; \boldsymbol b$</h4><ul>
+<li>First, solve $A \boldsymbol x &#x3D; \boldsymbol 0~(N(A))$<ul>
+<li>$R$: Reduced Row Echelon form $R &#x3D; \ce{rref}(A)$<ul>
+<li>$N(A)&#x3D;N(U)&#x3D;N(R)$</li>
+<li>has all pivots &#x3D; $1$, with zeros above and below</li>
+</ul>
+</li>
+<li>We can use Elimination or $R$ to solve it.</li>
+</ul>
+</li>
+<li>Then, solve $A \boldsymbol x &#x3D; \boldsymbol b$<ul>
+<li>$\boldsymbol{x}<em>{complete}&#x3D;\boldsymbol{x}</em>{particular}+\ce{any linear combination of N(A)}$</li>
+</ul>
+</li>
+</ul>
+
+    QAQ
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>Author：</strong>AutuEnd<br>
+        <strong>Link：</strong><a href="http://autuend.github.io/2024/05/14/MATH-257/" title="http:&#x2F;&#x2F;autuend.github.io&#x2F;2024&#x2F;05&#x2F;14&#x2F;MATH-257&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;autuend.github.io&#x2F;2024&#x2F;05&#x2F;14&#x2F;MATH-257&#x2F;</a><br>
+        
+            QWQ
+
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+   
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/MATH-257/" rel="tag">MATH 257</a>
+    
+</div>
+  
+  
+    <script async src="/js/copy-codeblock.js?v=1715686068247"></script>
+  
+
+  
+      <div class="nexmoe-post-footer">
+          <br>
+TnT
+
+      </div>
+  
+</div></div><div class="nexmoe-post-right">    <div class="nexmoe-fixed">
+        <div class="nexmoe-tool">
+
+            
+
+            
+            
+            <button class="mdui-fab catalog" style="overflow:unset;">
+                <i class="nexmoefont icon-i-catalog"></i>
+                <div class="nexmoe-toc">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Note-for-MATH-257"><span class="toc-number">1.</span> <span class="toc-text">Note for MATH 257</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Introduction-to-Vectors"><span class="toc-number">1.0.1.</span> <span class="toc-text">1 Introduction to Vectors</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-Vectors"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">1.1 Vectors</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-Lengths-and-Dot-Products"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">1.2 Lengths and Dot Products</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Matrics-Elimination"><span class="toc-number">1.0.2.</span> <span class="toc-text">2 Matrics Elimination</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-Matrix"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">2.1 Matrix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-Elimination"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">2.2 Elimination</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Inverse-Transpose"><span class="toc-number">1.0.3.</span> <span class="toc-text">3 Inverse &amp; Transpose</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-Defination"><span class="toc-number">1.0.3.1.</span> <span class="toc-text">3.1 Defination</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-Calculate-A-1"><span class="toc-number">1.0.3.2.</span> <span class="toc-text">3.2 Calculate $A^{-1}$</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Space"><span class="toc-number">1.0.4.</span> <span class="toc-text">4 Space</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-Definition"><span class="toc-number">1.0.4.1.</span> <span class="toc-text">4.1 Definition</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-Span"><span class="toc-number">1.0.4.2.</span> <span class="toc-text">4.2 Span</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-3-independence-basis-rank-and-dimension"><span class="toc-number">1.0.4.3.</span> <span class="toc-text">4.3 independence, basis, rank and dimension</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-Spaces-of-Matrix"><span class="toc-number">1.0.4.4.</span> <span class="toc-text">4.4 Spaces of Matrix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-5-Solve-A-boldsymbol-x-boldsymbol-b"><span class="toc-number">1.0.4.5.</span> <span class="toc-text">4.5 Solve $A \boldsymbol x &#x3D; \boldsymbol b$</span></a></li></ol></li></ol></li></ol></li></ol>
+                </div>
+            </button>
+            
+
+            
+
+            <a href="#nexmoe-content" class="backtop toc-link" aria-label="Back To Top" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+        </div>
+    </div>
+</div></div><div id="nexmoe-footer"><!--!--></div><div id="nexmoe-search-space"><div class="search-container"><div class="search-header"><div class="search-input-container"><input class="search-input" type="text" placeholder="Search" onInput="sinput();"></div><a class="search-close" onclick="sclose();">×</a></div><div class="search-body"></div></div></div><div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2058306854838448" crossorigin="anonymous"></script>
+</div></body></html>
